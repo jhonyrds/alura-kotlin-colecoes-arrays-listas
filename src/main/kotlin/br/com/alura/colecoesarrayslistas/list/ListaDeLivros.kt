@@ -1,5 +1,8 @@
 package br.com.alura.list
 
+import br.com.alura.colecoesarrayslistas.list.imprimeComMarcadores
+import br.com.alura.colecoesarrayslistas.list.listaDeLivros
+
 fun main() {
     val livro1 = Livro(
         titulo = "Grande Sertão: Veredas",
@@ -57,11 +60,4 @@ fun main() {
         .map { it.titulo }
 
     println(titulos)
-}
-
-fun List<Livro>.imprimeComMarcadores() {
-    val textoFormatado = this.joinToString(separator = "\n") {
-        " - ${it.titulo} de ${it.autor}"
-    }
-    println(" #### Lista de Livros #### \n$textoFormatado")
 }

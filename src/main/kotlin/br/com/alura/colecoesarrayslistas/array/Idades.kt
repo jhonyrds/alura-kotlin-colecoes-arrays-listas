@@ -5,9 +5,9 @@ fun main() {
 
     println("Idades: ${idades.contentToString()}")
 
-    println("Maior idade: ${idades.max()}")
+    println("Maior idade: ${idades.maxOrNull()}")
 
-    println("Menor idade: ${idades.min()}")
+    println("Menor idade: ${idades.minOrNull()}")
 
     val mediaIdades: Double = idades.average()
     println("Média das idades: $mediaIdades")
